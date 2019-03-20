@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<script src="jquery-3.2.1.js"></script>
+<style>
+	div{
+		width:40px; height:40px;
+		margin:5px;
+		float:left;
+		border:2px blue solid;
+		text-align:center;
+	}
+	span{color:red;}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<button>Change Colors</button>
+	<p></p>
+	<div>0</div>
+	<div>1</div>
+	<div>2</div>
+	<div id="stop">Stop here</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	
+	<script>
+		$("button").click(function(){
+			$("div").each(function (index, element){
+				$(element).css("backgroundColor", "yellow");
+				if($(this).is("#stop")){
+					$("p").text("Stopped at div index #"+index);
+					return false;
+				}
+			});
+		});
+	</script>
+</body>
+</html>

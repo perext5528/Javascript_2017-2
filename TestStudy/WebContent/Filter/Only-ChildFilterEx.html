@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+	<style type="text/css">
+		div{width:200px;}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<p>apple</p>
+		<p>banana</p>
+	</div>
+	<div>
+		<p>orange</p>
+	</div>
+	<script>
+		$("body p:only-child").css("background-color", "yellow");
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			$("#one + li").css({backgroundColor:"yellow"});
+			$("#one ~ li").css({color:"red"});
+		})
+	</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="container">
+		<h2>Welcome mySite</h2>
+		<ul class="list">
+			<li id="one">One</li>
+			<li id="two">Two</li>			
+			<ul>
+				<li id="two-1">two-1</li>
+				<li id="two-2">two-2</li>
+				<li id="two-3">two-3</li>
+			</ul>
+			<li id="three">Three</li>
+		</ul>
+	</div>
+</body>
+</html>

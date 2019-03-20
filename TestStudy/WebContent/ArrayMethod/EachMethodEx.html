@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+	<style>
+		div{color:red; cursor:pointer; font-weight:bolder; cursor:pointer;}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>KOREA</div>
+	<div>USA</div>
+	<div>JAPAN</div>
+	<script>
+		$(document).click(function(){
+			$("div").each(function(){
+				if(this.style.color !="blue"){
+					this.style.color="blue";
+				}else{
+					this.style.color="red";
+				}
+			});
+		});
+	</script>
+</body>
+</html>

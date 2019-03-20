@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<dl>
+		<dt id="prov-1">충청북도</dt>
+			<dd>청주시</dd>
+			<dd id="stop">충주시</dd>
+			<dd>제천시</dd>
+		<dt id="prov-2">충청남도</dt>
+			<dd>대전시</dd>
+			<dd>천안시</dd>
+	</dl>
+	<script>
+		$("#prov-1").nextUntil("dt#prov-2").css("backgroundColor", "yellow");
+		$("#prov-1").nextUntil("dt#prov-2", "#stop").css("color", "red");
+	</script>
+</body>
+</html>

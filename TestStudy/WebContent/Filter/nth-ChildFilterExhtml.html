@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src=jquery-3.2.1.js></script>
+	<style type="text/css">
+		div{width:200px;}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="container">
+		<ul class="nav1">
+			<li>내용 0</li>
+			<li>내용 1</li>
+			<li>내용 2</li>
+			<li>내용 3</li>
+		</ul>
+		<ul class="nav2">
+			<li>내용 0</li>
+			<li>내용 1</li>
+			<li>내용 2</li>
+			<li>내용 3</li>
+			<li>내용 4</li>
+		</ul>
+	</div>
+	<script>
+		$("div#container li:nth-child(even)").css("background-color", "yellow");
+		$("div#container li:nth-child(odd)").css("background-color", "gray");
+		$("div#container li:nth-child(2n+1)").css("color", "blue");
+		$("div#container li:nth-child(3n+2)").css("color", "red");
+		$("div#container li:nth-child(3)").css("color", "white");
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<ul class="first">
+		<li>list item 1</li>
+		<li>list item 2</li>
+		<li>list item 3</li>
+		<li>list item 4</li>
+		<li>list item 5</li>
+		<li>list item 6</li>
+	</ul>
+	<script>
+		$('li').css("backgroundColor", "yellow")
+		.filter(":even").css("color", "red")
+		.end()
+		.filter(":odd").css("color", "blue");
+	</script>
+</body>
+</html>

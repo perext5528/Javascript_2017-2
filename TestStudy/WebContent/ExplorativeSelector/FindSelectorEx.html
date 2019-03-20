@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+	<style>
+		div, p{float:left; margin:10px; background-color:#ffffff; border:#00ff00 thin solid;}
+		div#sub{width:100px; height:100px; border:#ff0000 thin solid;}
+		p{width:80px; height:80px; border:#000000 thin solid;}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="container">
+		<div id="sub">
+			<p align="center">div<br>div<br>p</p>
+		</div>
+		<p align="center">div<br>p</p>
+		<p align="center">div<br>p</p>	
+	</div>
+		
+	<script>
+		$("div#container").find("p").css("backgroundColor", "yellow");
+		
+	</script>
+</body>
+</html>

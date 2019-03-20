@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<script src="jquery-3.2.1.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<p class = "part-1">(p)Hello Part-1</p>
+	<div>(div)Hello Part-2</div>
+	<p class = "part-3">(p)Hello Part-3</p>
+	<p class = "part-4">(p)Hello Part-4</p>
+	<div>(div)Hello Part-5</div>
+	<p class = "part-6">(p)Hello Part-6</p>
+	<div>(div)Hello Part-7</div>
+	<script>
+		$("p.part-6").prev("div").css("backgroundColor", "yellow");
+		$("p.part-6").prevAll("p").css("backgroundColor", "gray");
+		$("p.part-6").prevAll().css("color", "red");
+				
+	</script>
+</body>
+</html>
